@@ -1,237 +1,211 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Livia Correa - Portfolio Dev</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
 </head>
+
 <body>
-    <div class="matrix-bg" id="matrixBg"></div>
-    
-    <div class="floating-elements">
-        <div class="floating-element" style="top: 10%; left: 10%;">🚀</div>
-        <div class="floating-element" style="top: 20%; right: 15%;">💻</div>
-        <div class="floating-element" style="top: 60%; left: 5%;">⚡</div>
-        <div class="floating-element" style="top: 70%; right: 10%;">🎮</div>
-        <div class="floating-element" style="top: 40%; left: 80%;">🌟</div>
+    <header class="container text-center">
+        <img src="img/avatar.png" alt="avatar do Edmundo" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Me chamo Ana Livia</p>
+        <h1>Sou Aprendiz de Programação</h1>
+        <p>Estou na área de programação há um tempinho, sempre buscando evoluir e aprender cada vez mais.</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Projeto-Corrida.png" class="card-img-top" alt="Imagem do projeto do Jogo de Corrida">
+                    <div class="card-body">
+                        <h5 class="card-title">Minha Biblioteca: Game de Corrida</h5>
+                        <p class="card-text">Este projeto é uma página web que apresenta uma Game desenvolvido em javascript feito pelo p5.js juntamente com o Curso da Alura.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o Jogo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Decidindo o Futuro: Uma Jornada Interativa sobre a Inteligência
+                            Artificial</h5>
+                        <p class="card-text">Este projeto é um jogo interativo baseado em navegador que explora o
+                            impacto e as implicações da Inteligência Artificial (IA) na sociedade, permitindo que as
+                            pessoas jogadoras façam escolhas que influenciam o desenrolar de uma narrativa sobre o
+                            futuro da IA.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Explorando o Universo: Uma Aventura Interativa em Astronomia com Scratch
+                        </h5>
+                        <p class="card-text">EEste projeto Scratch cria uma experiência interativa educativa sobre
+                            astronomia, permitindo aos usuários explorar informações sobre constelações, eclipses, e a
+                            forma da Terra através de cenários dinâmicos e diálogos informativos.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto é uma página web criada com HTML e CSS, destinada a exibir uma coleção pessoal de
+                        livros favoritos. O objetivo é criar um ambiente virtual onde seja possível compartilhar
+                        seus livros preferidos, fornecendo uma descrição breve de cada um, incluindo o autor, o ano
+                        de publicação e uma opção de compra.</p>
+                    <p>A estrutura do site é baseada em HTML, que define a semântica e o layout do conteúdo,
+                        enquanto o CSS é usado para estilizar a página visualmente, incluindo cores, tipografia e a
+                        disposição dos elementos.</p>
+                    <p>O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por uma divisão
+                        principal (.container) que apresenta o propósito do site e a coleção de livros em uma seção
+                        flexível (.livros). Cada livro é destacado em seu próprio contêiner (.livro), mostrando uma
+                        imagem da capa, detalhes do livro e um link de compra. O design responsivo é garantido pelo
+                        uso de uma meta tag viewport e um layout flexível que se adapta a diferentes tamanhos de
+                        tela.</p>
+                    <p>O CSS personaliza o visual do site, usando variáveis para cores, estilizando o texto com uma
+                        fonte importada do Google Fonts e aplicando um esquema de cores suaves e botões interativos.
+                        O uso de HTML e CSS é importante pois assim é possível criar um site acessível e
+                        esteticamente agradável sem a necessidade de scripts complexos, com foco na usabilidade e na
+                        experiência da pessoa usuária. A escolha da tipografia e do esquema de cores contribui para
+                        a atmosfera acolhedora do site, incentivando a exploração da coleção de livros.</p>
+                    <img src="img/projeto-1.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://femascheti.github.io/minhas-leituras/">Ver projeto ao vivo</a>
+                    <a href="https://github.com/femascheti/minhas-leituras">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto consiste em uma aplicação web interativa, desenvolvida com HTML, CSS, e JavaScript, que
+                        simula uma experiência narrativa centrada no tema da Inteligência Artificial. O objetivo é
+                        engajar os jogadores em um cenário fictício que aborda o avanço da IA e suas possíveis
+                        consequências para a humanidade, destacando a importância da reflexão ética sobre a tecnologia.
+                    </p>
+                    <p>O HTML estrutura o conteúdo da página, dividindo-o em seções como a tela inicial, caixa de
+                        perguntas, alternativas de resposta, e o resultado final baseado nas escolhas do jogador. O CSS
+                        é utilizado para estilizar a página, empregando um esquema de cores futurista e layout
+                        responsivo para melhorar a experiência do usuário. JavaScript é usado para adicionar
+                        interatividade ao jogo, manipulando o DOM para atualizar o conteúdo da página conforme as
+                        escolhas do jogador, e determinando o fluxo da narrativa através de uma série de perguntas e
+                        respostas.</p>
+                    <p>O HTML organiza o conteúdo em um cabeçalho com o título do site, seguido por uma divisão
+                        principal (.container) que apresenta o propósito do site e a coleção de livros em uma seção
+                        flexível (.livros). Cada livro é destacado em seu próprio contêiner (.livro), mostrando uma
+                        imagem da capa, detalhes do livro e um link de compra. O design responsivo é garantido pelo
+                        uso de uma meta tag viewport e um layout flexível que se adapta a diferentes tamanhos de
+                        tela.</p>
+                    <p>Os scripts JavaScript incluem módulos para gerar nomes aleatórios, definir as perguntas e as
+                        lógicas de jogo, como iniciar o jogo, apresentar perguntas e alternativas, processar as escolhas
+                        dos jogadores, e exibir o resultado final. Este design modular facilita a manutenção e a
+                        expansão futura do jogo. A importância das ferramentas utilizadas (HTML, CSS, JavaScript) reside
+                        na criação de uma experiência interativa que não apenas entretém, mas também educa os jogadores
+                        sobre a complexidade ética e social da IA, incentivando a reflexão crítica sobre o papel da
+                        tecnologia em nossas vidas.
+                    </p>
+                    <img src="img/projeto-2.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://femascheti.github.io/tecnicas-computacionais-refletindo-sobre-ia/">Ver projeto ao
+                        vivo</a>
+                    <a href="https://github.com/femascheti/tecnicas-computacionais-refletindo-sobre-ia">Ver código do
+                        projeto</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container">
-        <header>
-            <h1 class="glitch">Ana Livia Correa</h1>
-            <p class="subtitle">Desenvolvedora Frontend | Estudante | Criadora de Jogos</p>
-        </header>
-
-        <section class="section">
-            <h2 class="section-title">👋 Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Olá! Sou a Ana Livia, tenho 16 anos e estou no 2º ano do ensino médio. Sou apaixonada por programação e estou sempre criando coisas novas e divertidas!</p>
-                    <br>
-                    <p>Atualmente estou fazendo o curso da Alura para aprimorar minhas habilidades em desenvolvimento web. Adoro criar jogos interativos e experiências únicas usando JavaScript e p5.js.</p>
-                    <br>
-                    <p>Meu objetivo é me tornar uma desenvolvedora full-stack e criar aplicações que façam a diferença na vida das pessoas! 🚀</p>
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="emoji-animation">👩‍💻✨</div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">🎮 Meus Jogos</h2>
-            <div class="games-grid">
-                <div class="game-card">
-                    <h3 class="game-title">🏁 Corrida de Emojis</h3>
-                    <p class="game-description">
-                        Um jogo super divertido onde emojis competem em uma corrida maluca! 
-                        Desenvolvido com p5.js, tem animações suaves e é viciante de jogar.
-                    </p>
-                    <a href="https://editor.p5js.org/startmarcelo/full/lJ-xRqBjF" target="_blank" class="play-btn">
-                        🎮 Jogar Agora!
-                    </a>
+                <div class="modal-body">
+                    <p>O projeto é uma aplicação educativa interativa focada em ensinar conceitos básicos de
+                        astronomia. Utiliza uma série de scripts associados a diferentes atores (sprites) e
+                        cenários para criar uma experiência de aprendizado envolvente. O objetivo é familiarizar
+                        os usuários com tópicos como as fases da Lua, eclipses, a visibilidade de diferentes
+                        constelações dependendo da localização geográfica na Terra, e a forma da Terra, através
+                        de interações e visualizações dinâmicas.</p>
+                    <p>Cada ator no projeto possui scripts que definem seu comportamento em resposta a eventos
+                        específicos, como o início do programa (quando a bandeira é clicada), cliques do
+                        usuário, ou mensagens recebidas. Estes eventos desencadeiam ações como mudanças de
+                        cenário, movimentos de atores, exibição ou ocultação de atores, e a apresentação de
+                        diálogos informativos. Por exemplo, ao clicar em determinados atores, os usuários podem
+                        "receber" uma prova, o que leva a uma mudança de cenário e a exibição de informações
+                        relevantes ou a visualização de uma constelação específica.</p>
+                    <p>A importância das ferramentas utilizadas, como os blocos de código visual do Scratch,
+                        reside na sua acessibilidade e na capacidade de engajar aprendizes de diferentes idades
+                        no pensamento computacional e na exploração de conceitos científicos de forma
+                        interativa. O uso de cenários, movimentos, e diálogos dinâmicos ajuda a criar uma
+                        experiência de aprendizado mais rica e memorável, encorajando os usuários a explorar e
+                        interagir com o conteúdo de maneira ativa, em vez de passivamente.</p>
+                    <img src="img/projeto-3.png" alt="Projeto 3" class="img-fluid w-100">
                 </div>
-                
-                <div class="game-card">
-                    <h3 class="game-title">👁️ Olhos que Seguem</h3>
-                    <p class="game-description">
-                        Interação super legal onde os olhos de um personagem seguem o movimento do seu mouse! 
-                        Uma demonstração incrível de matemática aplicada à programação.
-                    </p>
-                    <a href="https://editor.p5js.org/jackdaniels2009/full/lrGseYfnj" target="_blank" class="play-btn">
-                        👀 Experimentar!
-                    </a>
+                <div class="modal-footer">
+                    <a href="https://scratch.mit.edu/projects/951732825/">Ver projeto ao vivo</a>
                 </div>
             </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">💻 Minhas Skills</h2>
-            <div class="skills">
-                <div class="skill-tag">HTML5</div>
-                <div class="skill-tag">CSS3</div>
-                <div class="skill-tag">JavaScript</div>
-                <div class="skill-tag">p5.js</div>
-                <div class="skill-tag">Responsive Design</div>
-                <div class="skill-tag">Git</div>
-                <div class="skill-tag">Criatividade</div>
-                <div class="skill-tag">Problem Solving</div>
-            </div>
-            
-            <div style="margin-top: 2rem;">
-                <h3 style="color: #4ecdc4; margin-bottom: 1rem;">📚 Estudando Atualmente:</h3>
-                <div style="margin-bottom: 1rem;">
-                    <span>Curso Alura - Desenvolvimento Web</span>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 75%;"></div>
-                    </div>
-                </div>
-                <div style="margin-bottom: 1rem;">
-                    <span>JavaScript Avançado</span>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 60%;"></div>
-                    </div>
-                </div>
-                <div>
-                    <span>React.js</span>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 30%;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">🌟 Projetos Futuros</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                <div style="background: rgba(255, 107, 107, 0.2); padding: 1.5rem; border-radius: 15px; border-left: 4px solid #ff6b6b;">
-                    <h4 style="color: #ff6b6b; margin-bottom: 0.5rem;">🎯 Jogo de Puzzle</h4>
-                    <p>Um quebra-cabeças interativo com níveis progressivos</p>
-                </div>
-                <div style="background: rgba(76, 201, 196, 0.2); padding: 1.5rem; border-radius: 15px; border-left: 4px solid #4ecdc4;">
-                    <h4 style="color: #4ecdc4; margin-bottom: 0.5rem;">📱 App de Tarefas</h4>
-                    <p>Organizador pessoal com design moderno</p>
-                </div>
-                <div style="background: rgba(0, 255, 136, 0.2); padding: 1.5rem; border-radius: 15px; border-left: 4px solid #00ff88;">
-                    <h4 style="color: #00ff88; margin-bottom: 0.5rem;">🎨 Portfolio 3D</h4>
-                    <p>Versão em 3D deste portfolio usando Three.js</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">📞 Vamos Conversar!</h2>
-            <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">
-                Adoraria trocar ideias sobre programação, jogos ou qualquer projeto legal! 🤝
-            </p>
-            <div class="contact-links">
-                <a href="mailto:analivia@email.com" class="contact-link">
-                    📧 Email
-                </a>
-                <a href="#" class="contact-link">
-                    💼 LinkedIn
-                </a>
-                <a href="#" class="contact-link">
-                    🐱 GitHub
-                </a>
-            </div>
-        </section>
+        </div>
     </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Fernanda Mascheti</p>
+    </footer>
 
-    <script>
-        // Efeito Matrix no fundo
-        function createMatrixEffect() {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            document.getElementById('matrixBg').appendChild(canvas);
-            
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            
-            const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
-            const charArray = chars.split('');
-            const fontSize = 14;
-            const columns = canvas.width / fontSize;
-            const drops = [];
-            
-            for (let i = 0; i < columns; i++) {
-                drops[i] = 1;
-            }
-            
-            function draw() {
-                ctx.fillStyle = 'rgba(102, 126, 234, 0.05)';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-                
-                ctx.fillStyle = '#00ff88';
-                ctx.font = fontSize + 'px monospace';
-                
-                for (let i = 0; i < drops.length; i++) {
-                    const text = charArray[Math.floor(Math.random() * charArray.length)];
-                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                    
-                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                        drops[i] = 0;
-                    }
-                    drops[i]++;
-                }
-            }
-            
-            setInterval(draw, 100);
-        }
-        
-        // Animação dos elementos flutuantes
-        function animateFloatingElements() {
-            const elements = document.querySelectorAll('.floating-element');
-            elements.forEach((element, index) => {
-                element.style.animationDelay = `${index * 0.5}s`;
-                element.style.animationDuration = `${4 + Math.random() * 4}s`;
-            });
-        }
-        
-        // Efeito de digitação no título
-        function typeWriter() {
-            const title = document.querySelector('.glitch');
-            const text = title.textContent;
-            title.textContent = '';
-            
-            let i = 0;
-            function type() {
-                if (i < text.length) {
-                    title.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(type, 100);
-                }
-            }
-            type();
-        }
-        
-        // Parallax scroll effect
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelectorAll('.floating-element');
-            const speed = 0.5;
-            
-            parallax.forEach(element => {
-                const yPos = -(scrolled * speed);
-                element.style.transform = `translateY(${yPos}px)`;
-            });
-        });
-        
-        // Inicializar efeitos
-        document.addEventListener('DOMContentLoaded', () => {
-            createMatrixEffect();
-            animateFloatingElements();
-            setTimeout(typeWriter, 500);
-        });
-        
-        // Redimensionar canvas quando a janela muda de tamanho
-        window.addEventListener('resize', () => {
-            const canvas = document.querySelector('#matrixBg canvas');
-            if (canvas) {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-            }
-        });
-    </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'971552fc97fcf1a1',t:'MTc1NTU2MTEzOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
