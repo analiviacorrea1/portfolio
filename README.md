@@ -10,4 +10,4 @@ Este repositório foi criado para concentrar todos os projetos que desenvolvo du
 ## 📂 Projetos
 
 - [Meu Portfólio](./Portfolio)  
-- [Visualizar projeto]([https://fishixzschool.github.io/CodandoComAlura/Portfolio/](https://analiviacorrea1.github.io/portfolio/)
+- [Visualizar](https://analiviacorrea1.github.io/portfolio/ )
